@@ -1,7 +1,8 @@
 let btn1=document.getElementById('btn');
 let input=document.getElementById('input');
 let main=document.querySelector('.main2');
-//let trash=document.querySelector('.fa-sharp fa-solid fa-trash');
+
+
  btn1.addEventListener('click',()=>{
    if(input.value==0){
     alert("Please Enter any task!");
@@ -11,8 +12,7 @@ let main=document.querySelector('.main2');
       newItem.classList.add('sub');
       newItem.innerHTML=` 
         <p class="task"> ${input.value} </p>
-        <i class="fa-sharp fa-solid fa-trash" id="trash"></i> `
-        console.log(newItem) 
+        <i class="fa-sharp fa-solid fa-trash" id="trash"></i> ` 
        main.appendChild(newItem);
         input.value= '';
    }
